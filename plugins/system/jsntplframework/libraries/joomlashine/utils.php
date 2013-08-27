@@ -648,6 +648,16 @@ class JSNTplUtils
 	}
 
 	/**
+	 * Check if current page is rendered by Jomsocial component
+	 *
+	 * @return  boolean
+	 */
+	public function checkJS()
+	{
+		return $this->checkExt('com_community', 'mod_community_');
+	}
+
+	/**
 	 * Check if current page is rendered by VirtueMart component and/or has any VirtueMart module assigned to.
 	 *
 	 */
