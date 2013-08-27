@@ -1,0 +1,89 @@
+<div class="col-left">
+	<div id="time">
+		<img src="images/content/socials/icon-watch.png" alt="icon-watch" />
+		<script type="text/javascript">
+		<!--
+		
+		var d_names = new Array("Sunday", "Monday", "Tuesday",
+		"Wednesday", "Thursday", "Friday", "Saturday");
+		
+		var m_names = new Array("Jan", "Feb", "Mar", 
+		"Apr", "May", "Jun", "Jul", "Aug", "Sep", 
+		"Oct", "Nov", "Dec");
+		
+		var d = new Date();
+		var curr_day = d.getDay();
+		var curr_date = d.getDate();
+		var sup = "";
+		if (curr_date == 1 || curr_date == 21 || curr_date ==31)
+		   {
+		   sup = "st";
+		   }
+		else if (curr_date == 2 || curr_date == 22)
+		   {
+		   sup = "nd";
+		   }
+		else if (curr_date == 3 || curr_date == 23)
+		   {
+		   sup = "rd";
+		   }
+		else
+		   {
+		   sup = "th";
+		   }
+		var curr_month = d.getMonth();
+		var curr_year = d.getFullYear();
+		
+		document.write("<span>" + d_names[curr_day] + "</span>" + " " + m_names[curr_month] + " "  + curr_date 
+		+ sup + "," + " " + curr_year);
+		
+		//-->
+		</script>
+	</div>
+	<div class="clearbreak"></div>
+	<div class="galery">
+		<img src="images/main-slider/1.jpg" alt="Demo" height="210">
+		<div class="caption">
+			<h3>Metro Style</h3>
+			<p>Lorem ispum dolor amet....</p>
+		</div>
+	</div>
+	<div class="clearbreak"></div>
+</div>
+<div class="col-right">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="media/js/MetroJs.min.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+			 $.noConflict();
+			jQuery(document).ready(function($){
+			jQuery("#tile1").liveTile({
+				mode:'flip',
+				}
+			);
+			jQuery("#tile2").liveTile({
+				mode:'flip',
+				}
+			);
+			jQuery("#tile3").liveTile({
+				  mode:'slide',        
+				}
+			);
+		});//]]>
+	</script>
+	<link rel="stylesheet" href="media/js/MetroJs.css" type="text/css" />
+	<div class="tiles red">
+		<div id="tile1" class="live-tile" data-delay="7500" data-initdelay="1500">        
+			<div class="front"><a href="https://www.facebook.com/joomlashine"><img src="images/content/socials/fb-front.png" alt="Facebook" class="full"></a></div>
+			<div class="back"><a href="https://www.facebook.com/joomlashine"><img src="images/content/socials/fb-back.png" alt="Facebook" class="full"></a></div>
+		</div>
+		<div id="tile2" class="live-tile blue" data-direction="horizontal" data-initdelay="2500" data-delay="5000">     
+			<div class="front"><a href="https://twitter.com/joomlashine"><img src="images/content/socials/tt-front.png" alt="Twitter" class="full"></a> </div>
+			<div class="back"><a href="https://twitter.com/joomlashine"><img src="images/content/socials/tt-back.png" alt="Twitter" class="full"></a> </div>   
+		</div>
+		<div id="tile3" class="live-tile myClass" data-swap="image" data-stops="100%" data-delay="5000">        
+			<div class="front"><a href="http://www.youtube.com/joomlashine"><img src="images/content/socials/yt-front.png" alt="Facebook"></a> </div>
+			<div class="myClass"><a href="http://www.youtube.com/joomlashine"><img src="images/content/socials/yt-back.png" alt="Facebook"></a> </div>
+		</div>
+	</div>
+</div>

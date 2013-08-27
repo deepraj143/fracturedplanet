@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="k2">
+  <name>K2 - Jomsocial Integration</name>
+  <author>Minitek.gr</author>
+  <creationDate>December 2011</creationDate>
+  <copyright>Copyright (c) 2011 Minitek.gr. All rights reserved.</copyright>
+  <authorEmail>info@minitek.gr</authorEmail>
+  <authorUrl>http://www.minitek.gr</authorUrl>
+  <version>3.0.1</version>
+  <license>GNU/GPLv3 http://www.gnu.org/copyleft/gpl.html</license>
+	<description>The K2 - Jomsocial Integration plugin integrates K2 and Jomsocial user avatar/link/info.</description>
+	<files>
+		<filename plugin="jsk2">jsk2.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+		<field type="spacer" name="myspacer1" label="&lt;b&gt;Category view (listings)&lt;/b&gt;" />
+		<field name="cat_enable" type="radio" default="1" label="Replace user link in K2 Category view" description="If you select YES, the user link in K2 Category view will point to the Jomsocial user profile.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" name="" hr="true" />
+		<field type="spacer" name="myspacer2" label="&lt;b&gt;Item view&lt;/b&gt;" />
+		<field name="item_enable" type="radio" default="1" label="Replace user link in K2 Item view" description="If you select YES, the user link in Item view will point to the Jomsocial user profile.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="item_avatar" type="radio" default="1" label="Replace user avatar in K2 Item view" description="If you select YES, the K2 user avatar in Item view will be replaced by the Jomsocial user avatar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="item_desc" type="radio" default="1" label="Replace user description in K2 Item view" description="If you select YES, the K2 user description in Item view will be replaced by the Jomsocial custom field with the name FIELD_ABOUTME.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="item_web" type="radio" default="1" label="Replace user website url in K2 Item view" description="If you select YES, the K2 user website url in Item view will be replaced by the Jomsocial custom field with the name FIELD_WEBSITE.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" name="" hr="true" />
+		<field type="spacer" name="myspacer3" label="&lt;b&gt;Author view&lt;/b&gt;" />
+		<field name="auth_avatar" type="radio" default="1" label="Replace user avatar in K2 Author view" description="If you select YES, the K2 user avatar in Author view will be replaced by the Jomsocial user avatar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="auth_desc" type="radio" default="1" label="Replace user description in K2 Author view" description="If you select YES, the K2 user description in Author view will be replaced by the Jomsocial custom field with the name FIELD_ABOUTME.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="auth_web" type="radio" default="1" label="Replace user website url in K2 Author view" description="If you select YES, the K2 user website url in Author view will be replaced by the Jomsocial custom field with the name FIELD_WEBSITE.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" name="" hr="true" />
+		<field type="spacer" name="myspacer4" label="&lt;b&gt;Comments&lt;/b&gt;" />
+		<field name="k2_comm_enable" type="radio" default="1" label="Replace user link in Comments" description="If you select YES, the user link in Comments will point to the Jomsocial user profile.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="k2_comm_avatar" type="radio" default="1" label="Replace user avatar in Comments" description="If you select YES, the user avatar in Comments will be replaced by the Jomsocial user avatar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field type="spacer" name="" hr="true" />
+		<field type="spacer" name="myspacer5" label="&lt;b&gt;Jomsocial Activity Stream&lt;/b&gt;" />
+		<field name="k2_activity_new" type="radio" default="1" label="Add activity to the stream when a K2 item is created" description="If you select YES, an activity will be added to the Jomsocial stream when a K2 item is created.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="k2_activity_upd" type="radio" default="1" label="Add activity to the stream when a K2 item is updated" description="If you select YES, an activity will be added to the Jomsocial stream when a K2 item is updated.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="new_item_text" type="text" default="added a new article: " label="Text for new item in Jomsocial stream" description="Text for new item in Jomsocial stream." />
+	  <field name="update_item_text" type="text" default="updated the article:" label="Text for updated item in Jomsocial stream" description="Text for updated item in Jomsocial stream." />
+		<field type="spacer" name="" hr="true" />
+		<field type="spacer" name="myspacer6" label="&lt;b&gt;Custom profile fields&lt;/b&gt;" />
+		<field name="item_desc_id" type="text" default="4" label="Insert FIELD_ABOUTME id [default=4]" description="Do not change unless you know what you are doing." />
+		<field name="item_web_id" type="text" default="12" label="Insert FIELD_WEBSITE id [default=12]" description="Do not change unless you know what you are doing." />
+	    </fieldset>
+		</fields>
+	</config>
+</extension>

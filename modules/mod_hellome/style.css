@@ -1,0 +1,12 @@
+#jsNotification {list-style-type: none;overflow:visible;text-align: center;width: 74px;margin: 20px auto 10px !important;height:20px;padding:0;}
+#jsNotification li {display:block;float:left;overflow:visible;margin:0 auto;text-align:center;text-indent:-9999px;margin-right:10px;width: 16px;height: 16px;
+border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;border:1px solid #ddd;}
+#jsNotification li a {display:block;position:relative;}
+#jsNotification li a:hover {background:none;}
+#jsNotification #jsGlobal {background:url('images/noti.png') no-repeat 1px 1px #f8f8f8;}
+#jsNotification #jsFriend {background:url('images/friend.png') no-repeat 1px -1px #f8f8f8;}
+#jsNotification #jsInbox {background:url('images/mail.png') no-repeat 2px 2px #f8f8f8;margin-right:0px !important;}
+#jsNotification li a .notifcount {background-color: #EA0000;position: absolute;left: 6px;top: -6px;height: 14px;min-width: 10px;font-weight: bold;
+	line-height: 14px;color: white;text-align: center;text-indent: 0;padding: 0 2px;border-bottom: 1px solid #111;
+	display: block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;overflow: visible;z-index:9999;
+}

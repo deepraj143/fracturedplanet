@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community">
+<params>
+	<param name="home_address" type="text" default="" label="Home Adress" description="home address." />
+        <param name="city" type="text" default="" label="City" description="Show city." />
+        <param name="postal_code" type="text" default="" label="Postal Code" description="postal code." />
+        <param name="country" type="text" default="" label="Country" description="country." />
+        <param name="phone_number" type="text" default="" label="Phone Number" description="phone number." />
+        <param name="mobile_number" type="text" default="" label="Mobile Number" description="mobile number." />
+        <param name="fax_number" type="text" default="" label="Fax Number" description="fax number." />
+        <param name="my_company" type="text" default="" label="My Company" description="my company." />
+        <param name="work_address" type="text" default="" label="Work Address" description="work address." />
+        <param name="website" type="text" default="" label="Website" description="Website." />
+        <param name="department" type="text" default="" label="Department" description="department." />
+        <param name="job_title" type="text" default="" label="Job Title" description="job title." /> 
+        <param name="main_im_id" type="text" default="" label="Main IM ID" description="Main IM ID." />
+        <param name="icq" type="text" default="" label="icq chat id" description="icq chat id." />
+        <param name="aim" type="text" default="" label="aim chat id" description="aim chat id." />
+        <param name="yim" type="text" default="" label="yim chat id" description="yim chat id." />
+        <param name="msn" type="text" default="" label="msn chat id" description="msn chat id." />
+        <param name="google" type="text" default="" label="google chat id" description="google chat id." />
+        <param name="skype" type="text" default="" label="skype chat id" description="skype chat id." />
+</params>
+</extension>

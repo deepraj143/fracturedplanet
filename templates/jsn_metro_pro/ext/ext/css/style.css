@@ -1,0 +1,1507 @@
+
+/*= IMPORT STYLING FROM DEFAULT;
+-------------------------------------------------------------- */
+@import url("../../default/css/style.css");
+#community-wrap label,
+#community-wrap input[type="text"],
+#community-wrap input[type="password"],
+#community-wrap .uneditable-input,
+#community-wrap select,
+#community-wrap textarea {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: none !important;
+	border: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	outline: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+}
+#community-wrap .btn {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	outline: none;
+	box-shadow: none;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+}
+#community-wrap .btn:hover,
+#community-wrap .btn:focus {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	color: #fff;
+}
+#community-wrap textarea {
+	width: 100% !important;
+}
+#community-wrap #basicSet textarea {
+	width: 287px !important;
+}
+#community-wrap input[type="text"]:focus,
+#community-wrap input[type="password"]:focus,
+#community-wrap .uneditable-input:focus,
+#community-wrap select:focus {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.6);
+}
+#community-wrap select option {
+	color: #333;
+}
+#community-wrap label {
+	background: none;
+	border: none;
+}
+h1, h2, h3, h4, h5, h6, a {
+}
+#community-wrap .cButton,
+#community-wrap .cButton:hover,
+#community-wrap .cButton:focus,
+#community-wrap .cAlert,
+#community-wrap .cPageAdmin {
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .cButton{
+	color: #fff;
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	transition: all .3s;
+	-moz-transition: all .3s
+	-webkit-transition: all .3s
+}
+#community-wrap .cButton:hover,
+#community-wrap .cButton:focus {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+}
+#community-wrap .cToolBar {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .cAlert {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);	
+}
+#community-wrap .cToolBar {
+	padding: 10px 10px 12px;
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+}
+#community-wrap .cPageToolbox {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+}
+#community-wrap .cPageToolbox a {
+	color: #fff !important;
+	transition: all .3s;
+}
+#community-wrap .cPageToolbox a:hover {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	text-decoration: none !important;
+}
+#community-wrap .cIndex-Content a {
+	color: #fff;
+}
+/*========================== OVERRIDE ICONS =======================*/
+#community-wrap [class^="com-icon-"],
+#community-wrap [class*=" com-icon-"],
+#community-wrap [class^="com-toolbar-"],
+#community-wrap [class*=" com-toolbar-"],
+#community-wrap [class^="com-app-"],
+#community-wrap [class*=" com-app-"] {
+	background-image: url(../images/sprites-icons-white.png);
+}
+body.jsn-color-white #community-wrap [class^="com-icon-"],
+body.jsn-color-white #community-wrap [class*=" com-icon-"],
+body.jsn-color-white #community-wrap [class^="com-toolbar-"],
+body.jsn-color-white #community-wrap [class*=" com-toolbar-"],
+body.jsn-color-white #community-wrap [class^="com-app-"],
+body.jsn-color-white #community-wrap [class*=" com-app-"] {
+	background-image: url(../images/sprites-icons.png);
+}
+#community-wrap [class^="com-toolbar-"],
+#community-wrap [class*=" com-toolbar-"] {
+    background-image: url(../images/sprites-toolbar-white.png);
+}
+body.jsn-color-white #community-wrap [class^="com-toolbar-"],
+body.jsn-color-white #community-wrap [class*=" com-toolbar-"] {
+    background-image: url(../images/sprites-toolbar.png);
+}
+#community-wrap .cToolBar .cMenu-Icon a:hover,
+#community-wrap .cToolBar .cMenu-Icon a:focus,
+#community-wrap .cToolBar .cMenu-Icon a.active {
+	background: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+/*========================== TOOLBAR =======================*/
+#community-wrap .navbar-inner {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+#community-wrap .js-toolbar .nav > li {
+	margin: 0;
+}
+#community-wrap .js-toolbar .nav > li > a [class^="js-icon-"]:before,
+#community-wrap .js-toolbar .nav > li > a [class^="js-icon-"]:after {
+	font-size: 16px;
+	line-height: 1.2em;
+}
+#community-wrap .js-toolbar .nav > li > a,
+#community-wrap .js-toolbar .nav > .active > a,
+#community-wrap .js-toolbar .nav > .active > a:hover,
+#community-wrap .js-toolbar .nav > .active > a:focus,
+#community-wrap .js-toolbar .nav > li > a:focus, 
+#community-wrap .js-toolbar .nav > li > a:hover {
+	color: #fff;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	background: none;
+}
+#community-wrap .js-toolbar .js-counter {
+	background: #D53F26;
+	line-height: 14px;
+	position: absolute;
+	font-size: 11px;
+	font-weight: normal;
+	top: 0;
+	right: 0;
+	padding: 1px 4px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	text-shadow: none;
+}
+#community-wrap .js-toolbar .nav > li > a.menu-icon {
+	position: relative;
+}
+#community-wrap .js-toolbar .nav > li > a {
+	padding: 6px 5px;
+}
+/*========================== OVERRIDE JSN-METRO GENERAL LAYOUT =======================*/
+/*============ GENERAL =============*/
+#community-wrap {
+	color: #fff;
+}
+#jsn-mainbody-content {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+#jsn-mainbody {
+	padding: 0 !important;
+}
+#community-wrap .cEmpty {
+	color: #fff;
+}
+#community-wrap .componentheading {
+	color: #fff;
+	margin-bottom: 10px;
+}
+#community-wrap .cSubmenu,
+#community-wrap .cToolBox,
+#community-wrap .cPageToolbox {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .cToolBar + .cToolBox {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #fff;
+}
+#community-wrap .cToolBar + .cToolBox a {
+	color: #fff;
+}
+#community-wrap .cSubmenu,
+#community-wrap .cToolBox-Options li a {
+	font-size: 13px;
+	color: #fff;
+}
+#community-wrap .cToolBox-Options li a {
+	padding: 3px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+}
+#community-wrap .cToolBox-Options li a:hover {
+	background: rgba(255,255,255,.2) !important;
+	background: url(../images/transparent-bg.png) 0 0 repeat\9 !important;
+}
+#community-wrap .cToolBox-Options li a:hover span {
+	background: none;
+}
+#community-wrap .cSubmenu li a,
+#community-wrap .cSubmenu li a:hover,
+#community-wrap .cSubmenu li a.active,
+#community-wrap .small,
+#community-wrap small {
+	color: #fff;
+}
+#community-wrap .cSubmenu li a.active {
+	text-decoration: underline !important;
+}
+#community-wrap .cToolBox-Options {
+	margin: 10px 0;
+}
+#community-wrap div.app-box .link-action:hover,
+#community-wrap div.app-box a:hover {
+	background: none;
+}
+#community-wrap .photoCaption .photoCaptionText {
+	padding: 10px;
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+}
+/*============ LOGIN/RESIGTER LAYOUT =============*/
+#community-wrap .cGuest {
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin-bottom: 15px;
+}
+#community-wrap .cGuest .hero-area {
+	border-radius: 0;
+	border: 1px solid rgba(255,255,255,.2);
+	border-bottom: none;
+}
+#community-wrap .cGuest .hero-area .content {
+	padding: 20px 20px 5px;
+}
+#community-wrap .btn-primary {
+	border: 1px solid rgba(255,255,255,.2);
+	background: #006DBC;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+}
+#community-wrap .btn-primary:hover {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+#community-wrap .cGuest form {
+	margin-bottom: 0;
+}
+#community-wrap .cGuest .login-area {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	color: #fff;
+}
+#community-wrap .cGuest .login-area label,
+#community-wrap .cGuest .login-area a {
+	color: #fff;
+	font-size: 14px;
+}
+#community-wrap .cGuest .reminder-link:hover {
+	color: #e2e2e2;
+}
+#community-wrap .cGuest .login-area .add-on {
+	background: none;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+#community-wrap .cGuest .login-area input {
+	border: 1px solid rgba(255,255,255,.2);
+	border-left: none;
+	color: #fff;
+}
+#community-wrap .cGuest .login-area input#submit {
+	border: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	height: 40px;
+}
+#community-wrap [class^="js-icon-"]:before,
+#community-wrap [class*=" js-icon-"]:before {
+	font-size: 18px;
+	line-height: 1.6em;
+}
+#community-wrap ul.inline > li,
+#community-wrap ol.inline > li {
+	margin-left: 0;
+}
+/*------------ INTRO ------------*/
+#community-wrap .cGuest-Intro {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	margin: 0 245px 0 0;
+	padding: 15px 15px 25px;
+}
+#community-wrap .cGuest-Intro .cGuest-Head {
+	color: #fff;
+	border-bottom: none;
+	text-transform: uppercase;
+	font-size: 30px;
+	padding: 10px;
+}
+#community-wrap .cGuest-Intro .cGuest-Story li {
+	font-size: 18px;
+	line-height: 25px;
+	color: #fff;
+}
+#community-wrap .cGuest-Intro .cGuest-Action {
+	border-top: none;
+	margin-top: 21px;
+	padding-top: 5px;
+}
+/*============ MAINCONTENT LAYOUT =============*/
+#community-wrap .cStreamList > li {
+	padding: 0;
+}
+#community-wrap .cMain .cResetH {
+	color: #fff;
+	font-weight: 300;
+}
+body.jsn-color-white #community-wrap .cMain .cResetH {
+	color: #333;
+}
+#community-wrap .cSidebar + .cMain {
+	color: #fff;
+}
+#community-wrap .cStream-Avatar {
+	border: 1px solid rgba(255,255,255,.2);
+	padding: 3px;
+}
+#community-wrap .cStream-Avatar .cAvatar {
+	width: 55px;
+	height: 55px;
+}
+#community-wrap .cStreamList a {
+	color: #fff;
+}
+#community-wrap .cStreamList > li + li {
+	border-top: none;
+}
+#community-wrap .cStream-Content {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	margin-bottom: 15px;
+	padding: 10px;
+	margin-left: 70px;
+}
+#community-wrap .cStream-Quote {
+	font-style: italic;
+	border-left: none;
+}
+#community-wrap .cStream-Actions span {
+	color: #fff;
+}
+#community-wrap .cActivity-Button {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9 !important;
+	filter: none\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border: none\9;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+}
+#community-wrap .cActivity-Button:hover {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+}
+#community-wrap .cActivity-Button > a {
+	color: #fff !important;
+}
+#community-wrap .cActivity-Button > a:hover {
+	text-decoration: none;
+}
+/*============ SIDE-BAR LAYOUT =============*/
+#community-wrap .app-box.control-admin {
+    background: #FF9800;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border: none\9;
+}
+#community-wrap .app-box {
+	border-radius: 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: none\9;
+}
+#community-wrap .app-box > h3 {
+	color: #fff !important;
+	font-size: 20px !important;
+	font-weight: 300 !important;
+	border-bottom: none;
+}
+#community-wrap .app-box-content {
+	color: #fff;
+}
+body.jsn-color-white #community-wrap .app-box-content .cField .cField-Content {
+	color: #333;
+}	
+.app-box-footer {
+	border-top: none !important;
+	padding-top: 0;
+}
+#community-wrap .app-box a {
+	color: #fff;
+}
+.app-box-footer a {
+	display: inline-block;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	text-decoration: none !important;
+	padding: 5px 10px;
+}
+.app-box-footer a:hover {
+	text-decoration: none !important;
+	background: none !important;
+	color: #fff !important;
+}
+#community-wrap .cSidebar .app-box:nth-child(1) {
+	background-color: #629B00;
+}
+#community-wrap .cSidebar .app-box:nth-child(2) {
+	background-color: #0094A8;
+}
+#community-wrap .cSidebar .app-box:nth-child(3) {
+	background-color: #9E0039;
+}
+#community-wrap .cSidebar .app-box:nth-child(4) {
+	background-color: #006DBC;
+}
+#community-wrap .cSidebar .app-box:nth-child(5) {
+	background-color: #FF9800;
+}
+#community-wrap .cSidebar .app-box:nth-child(6) {
+	background-color: #6C00A4;
+}
+#community-wrap .cThumbsList li {
+	margin: 10px 0 0 10px;
+}
+#community-wrap .cThumbsList .cAvatar {
+	width: 56px;
+	height: 56px;
+}
+#community-wrap .app-box-content .thumbnail,
+.js-module .app-box-content .thumbnail {
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	padding: 0;
+}
+#community-wrap a.thumbnail:hover,
+#community-wrap a.thumbnail:focus {
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;	
+}
+.app-box-content .cThumbsList .cAvatar {
+	width: 58px;
+	height: 58px;
+}
+/* ======= SEARCH ======*/
+.app-box-content .input-block-level {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	padding: 0 3px;
+}
+app-box-content .input-block-level:focus {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.4);
+}
+.app-box-content .btn-primary {
+	float: right;
+}
+.app-box-content .btn-primary:hover {
+	text-decoration: none;
+	background: none !important;
+	color: #fff !important;
+}
+/* ======= MEMBERS ======*/
+.app-box-filter a {
+	padding: 2px 3px;
+	text-decoration: none !important;
+}
+.app-box-filter b {
+	display: none;
+}
+.app-box-filter a.active-state,
+.app-box-filter a:hover {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2) !important;
+	background: url(../images/transparent-bg.png) 0 0 repeat\9 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; 
+	color: #fff !important;
+}
+div.jsn-modulecontainer .js-module.js-mod-videos,
+div.jsn-modulecontainer .js-module.js-mod-photos {
+	margin-bottom: 0;
+}
+/*========================== PHOTOS PAGE LAYOUT =======================*/
+#community-wrap .cMedia-Title a,
+#community-wrap .cMedia-Title b {
+	color: #fff;
+}
+#community-wrap .cMedia-ThumbList .cMedia-Box,
+#community-wrap .cMedia-Meta .cMeta-Details {
+	color: #fff;
+}
+#community-wrap .cMedia-ThumbList.Albums .cMedia-Details a {
+	color: #fff;
+	text-decoration: underline;
+}
+#community-wrap .cPageActions.cPageAction {
+	border: none;
+	float: right;
+}
+#community-wrap .cPageAction > div {
+	border: none;
+}
+#community-wrap .cPageAction > div:first-child,
+#community-wrap .cPageAction > div:last-child {
+	border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+#community-wrap .cWall-Header {
+	border-top: none;
+}
+#community-wrap .cMedia-Comments {
+	color: #fff;
+}
+#community-wrap .cMedia-Option {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#community-wrap .cMedia-Options,
+#community-wrap .cMedia-Options li > a span {
+	color: #fff;
+}
+#community-wrap .cComments-All,
+#community-wrap .cWall-Content {
+	border-top: none;
+}
+#community-wrap .cLike {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .cLike a,
+#community-wrap .cLike b,
+#community-wrap .cLike i {
+	color: #fff !important;
+	text-shadow: none;
+}
+#community-wrap .cWall-Header {
+	color: #fff;
+}
+#cGallery .photoViewport .photoDisplay {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+}
+#community-wrap #cGallery .cPageActions {
+	position: relative;
+	z-index: 9999;
+}
+#community-wrap .cComment + .cComment {
+	border-top: 1px solid rgba(255,255,255,.2);
+}
+#community-wrap .cComment-Author {
+	color: #fff;
+}
+#community-wrap .cComment-Input textarea {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+.cToolBox-Name {
+	color: #fff;
+}
+.small a {
+	color: #fff;
+}
+#community-wrap #cPhoto .cSidebar {
+	margin-top: 67px;
+	color: #fff;
+}
+#community-wrap #taggingAutocompleteContainer input#photoTagQuery {
+	color: #333;
+}
+/*========================== USER PAGE LAYOUT =======================*/
+#community-wrap .js-focus-header .span5 h3 {
+	color: #fff !important;
+}
+#community-wrap .cStream-Respond > div {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	margin: 7px 0 0 0;
+}
+#community-wrap .cStream-Respond > div + div {
+	margin-top: 5px;
+}
+#community-wrap .cStream-Comment .cStream-Meta {
+	color: #fff;
+}
+#community-wrap .cStream-Comment .cStream-Content {
+	background: none;
+	border: none;
+	padding: 0 10px;
+}
+#community-wrap .cProfile-Statistic a,
+#community-wrap .cProfile-Statistic b {
+	background: #eee;
+	color: #fff !important;
+	display: block;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+#community-wrap .cProfile-Header {
+	margin: 0;
+	padding: 0 0 10px;
+}
+#community-wrap .cProfile-Statistic div.cStats-Activity {
+	float: right;
+}
+#community-wrap .cProfile-Statistic div {
+	display: inline-block;
+	width: 19.5%;
+}
+#community-wrap .cProfile-Statistic div + div {
+	margin-left: 0.55%;
+}
+#community-wrap .cProfile-Main {
+	margin: 0 190px 0 0;
+}
+#community-wrap .cProfile-Side {
+	float: right;
+	width: 176px;
+}
+#community-wrap .cProfile-Likes {
+	margin: 0 0 15px;
+}
+#community-wrap .cProfile-Status p {
+	border-left: 2px solid #eee;
+	margin: 5px 0 5px;
+	padding: 5px 5px 5px 10px;
+}
+#community-wrap .cProfile-Status span {
+	text-transform: capitalize;
+}
+#community-wrap .cProfile-Heading {
+	font-size: 18px;
+	margin: 15px;
+	font-weight: bold;
+}
+#community-wrap .cProfile-Heading > a {
+	font-size: 11px;
+	float: right;
+}
+#community-wrap .cProfile-Fields {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	display: inline-block;
+	margin: 0 0 20px;
+	width: 99.8%
+}
+#community-wrap .cProfile-Fields .cField {
+	width: 31.333%;
+	float: left;
+	border-top: 0;
+	margin: 0 0 0 2%;
+	padding: 0;
+}
+#community-wrap .cField .cField-Title {
+	font-size: 14px;
+	color: #fff;
+}
+body.jsn-color-white #community-wrap .cField .cField-Title {
+	color: #333;
+}
+#community-wrap .cField .cField-Name {
+	color: #fff;
+	font-weight: bold;
+}
+#community-wrap .cProfile-Statistic {
+	font-size: 0;
+	text-align: center;
+	margin: 0 0 20px;
+}
+#community-wrap .cProfile-Statistic span {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+#community-wrap .cProfile-Statistic span + span {
+	font-size: 11px;
+	font-weight: normal;
+	opacity: 0.7;
+}
+#community-wrap .cStats-Karma b {
+	background: #779438;
+}
+#community-wrap .cStats-Groups a {
+	background: #45b3f7 !important;
+}
+#community-wrap .cStats-Friends a {
+	background: #a1a1a1 !important;
+}
+#community-wrap .cStats-Photos a {
+	background: #ff7d59 !important;
+}
+#community-wrap .cStats-Activity b {
+	background: #f63f2d;
+}
+#community-wrap .cPageTools {
+	margin-top: 15px;
+}
+/*========================== MY ACCOUNT PAGE LAYOUT =======================*/
+#community-wrap .js-focus {
+	background: rgba(255,255,255,.2);
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+#community-wrap .js-focus-cover {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+#community-wrap .js-focus-content,
+#community-wrap .js-focus-content .app-box {
+	background: none;
+}
+#community-wrap .js-focus-menu a {
+	color: #fff;
+}
+#community-wrap .js-focus-actions .navbar-inner {
+	background: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+#community-wrap .js-focus-actions .navbar .nav > li > span,
+#community-wrap .js-focus-actions .navbar .nav > li > a {
+	text-shadow: none;
+	color: #fff;
+}
+#community-wrap .js-focus-actions .js-focus-like {
+	color: #fff !important;
+	background: none;
+	box-shadow: none;
+}
+#community-wrap .js-focus-actions .js-focus-like:hover {
+	background: rgba(255,255,255,.2) !important;	
+}
+#community-wrap .thumbnail {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+#community-wrap .js-focus-avatar {
+	max-height: 180px;
+	border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+}
+#community-wrap .community-status .creator.stub {
+	color: #fff;
+}
+#community-wrap .community-status .status-creator {
+    background: rgba(255, 255, 255, 0.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 10px;
+}
+#community-wrap .community-status .creator-actions {
+	padding-top: 10px;
+}
+#community-wrap .community-status .creators {
+	height: 34px;
+}
+#community-wrap .community-status .creator-view {
+	border: none;
+}
+#community-wrap .community-status .creator-view,
+#community-wrap .community-status .creator.active {
+    background: rgba(255, 255, 255, 0.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+#community-wrap .community-status .creator.active {
+	border: none;
+	padding: 2px 15px 0px;
+}
+#community-wrap .community-status .creator a {
+    color: #FFFFFF;
+}
+#community-wrap .community-status .creator-message-container {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: none;
+	color: #fff;
+}
+#community-wrap .community-status .creator-message {
+	background: none;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .community-status .creator-message.hint {
+	color: #fff;
+}
+img.calendar {
+	border: none;
+	margin: 0 5px;
+	vertical-align: middle;
+}
+#community-wrap .cButton.cProfile-LinkEdit,
+#community-wrap .cButton.cProfile-LinkEdit:focus,
+#community-wrap .cButton.creator-share,
+#community-wrap .cButton.creator-share:focus {
+	padding: 4px 10px 6px;
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+	box-shadow: none;
+	font-size: 12px;
+	text-shadow: none;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+}
+#community-wrap .cButton.cProfile-LinkEdit:hover,
+#community-wrap .cButton.creator-share:hover {
+	background: rgba(255,255,255,.4);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+#community-wrap .label-filetype {
+	border: 1px dashed #fff;
+    border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .js_PriContainer {
+	border: 1px solid rgba(255,255,255,.2);
+	backgound: none;
+}
+#community-wrap .community-status .creator-privacy .js_PrivacyOpen .js_dropDownMaster,
+#community-wrap .js_dropDownMaster {
+	background: none;
+	border: none;
+}
+#community-wrap .js_PrivacyOpen .js_dropDownMaster dt,
+#community-wrap .js_PrivacyOpen .js_dropDownMaster dd {
+	border: none;
+}
+#community-wrap .js_dropSelect-0,
+#community-wrap .js_dropSelect-0:hover {
+	background-position: -1192px 50% !important;
+}
+#community-wrap .js_dropDownMaster dt,
+#community-wrap .js_dropDownParent li > a {
+	background-image: url(../images/sprites-privacy.png) !important;
+	padding: 5px 15px 6px 21px;
+}
+#community-wrap .cProfile-Edit .js_dropDownMaster dt {
+	padding: 5px 0 6px 21px;
+}
+#community-wrap .cProfile-Edit .js_dropDownMaster dt span {
+	background: url(../images/pri-arrow.png) no-repeat 50% 50%;
+	width: 30px;
+}
+#community-wrap .js_PrivacyOpen .js_dropDownMaster dd {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;;
+}
+#community-wrap .js_dropDownMaster dt span {
+	background: url(../images/pri-arrow.png) no-repeat center center;
+}
+#community-wrap .cFilter {
+	border-bottom: none;
+}
+#community-wrap .cFilter .filters li a {
+	color: #fff;
+	transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+}
+#community-wrap .cFilter .filters li.active a,
+#community-wrap .cFilter .filters li a:hover,
+#community-wrap .cFilter .filters li.active a:hover {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	text-decoration: none !important;
+}
+#community-wrap .cStream-FormCancel {
+	padding: 0 3px;
+}
+
+#community-wrap .cButton.cStream-FormSubmit,
+#community-wrap .cButton.cStream-FormSubmit:hover,
+#community-wrap .cButton.cStream-FormSubmit:focus {
+    background: rgba(255, 255, 255, 0.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    color: #FFFFFF;
+}
+#community-wrap .cIndex-Box {
+	background: rgba(255, 255, 255, 0.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap #newalbum .cButton-Blue,
+#community-wrap #newalbum .cButton-Blue:focus	{
+	padding: 3px 10px;
+}
+#community-wrap .community-status .creator-view.type-custom {
+	border: none;
+}
+#community-wrap .cField-List .cField-Content li a {
+	color: #fff;
+}
+/*========================== USER PROFILE EDIT =======================*/
+#community-wrap .cTabsMenu li a {
+	color: #fff;
+}
+#community-wrap .cTabsMenu li a:focus,
+#community-wrap .cTabsMenu li a.selected,
+#community-wrap .cTabsMenu li a:hover {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+#basicSet .ctitle h2 {
+	color: #fff;
+}
+#community-wrap .cFormList .form-helper {
+	float: left;
+}
+#community-wrap .cAlert {
+	color: #4A0000;
+}
+.cLayout h2 {
+	color: #fff;
+}
+#community-wrap .cProfile-Edit select {
+	background: none !important;
+}
+/*========================== GROUP LAYOUT=======================*/
+#community-wrap .cPageAvatar {
+    padding: 5px;
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+#community-wrap .cPageInfo {
+	margin: 0 0 0 245px;
+}
+#community-wrap .cPageInfo a {
+	color: #fff;
+	font-weight: bold;
+}
+#community-wrap .cPageTabs li a {
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+#community-wrap .cPageTabs li.cTabCurrent a {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .cPageTabs li:hover a {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	text-decoration: none !important;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#community-wrap .app-box-list.for-menu li a {
+	text-decoration: none;
+}
+#community-wrap .cPageTabs {
+	border-bottom: 1px solid rgba(255,255,255,.2);
+}
+#community-wrap .cLike,
+#community-wrap .cPageAction > div {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	filter: none\9;
+}
+#community-wrap .cPageAction > div a,
+#community-wrap .cPageAction > div a:hover {
+	color: #fff !important;
+}
+#community-wrap [class^="com-icon-"] + a,
+#community-wrap [class*=" com-icon-"] + a,
+#community-wrap [class^="com-icon-"] + span,
+#community-wrap [class*=" com-icon-"] + span {
+	color: #fff;
+}
+#community-wrap .cPageActions {
+	border-bottom: none;
+}
+#community-wrap #cPhoto .cPageActions {
+	position: absolute;
+	z-index: 999;
+	right: 0;
+}
+#community-wrap .cSlider.perPhoto .cSlider-nav-btn {
+	display:none;
+}
+#community-wrap .cSubmenu-Search {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+}
+.cMedia-About .cMedia-Author a,
+.cMeta-Details .cMedia-Updated a {
+	color: #fff;
+}
+body.jsn-color-white .cMedia-About .cMedia-Author a,
+body.jsn-color-white .cMeta-Details .cMedia-Updated a  {
+	color: #333;
+}
+/*========================== POP-UP BOX =======================*/
+#cWindowContentOuter {
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+body #cWindow #cWindowAction .button,
+body #cWindow #cWindowAction .button:hover,
+body #cWindow #cWindowAction .button:focus,
+body #cWindow #cWindowAction input.button,
+body #cWindow #cWindowAction button.button,
+body.jsn-css3 #cWindow #cWindowAction .button,
+body.jsn-css3 #cWindow #cWindowAction .button:hover,
+body.jsn-css3 #cWindow #cWindowAction .button:focus,
+body.jsn-css3 #cWindow #cWindowAction input.button,
+body.jsn-css3 #cWindow #cWindowAction button.button {
+	text-shadow: none !important;
+	background: #333 !important;
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border: 1px solid #222 !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+body #cWindow label,
+body #cWindow input[type="text"]
+body #cWindow input[type="password"],
+body #cWindow .uneditable-input,
+body #cWindow select,
+body #cWindow textarea {
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+body #cWindow label,
+body #cWindow input[type="text"],
+body #cWindow input[type="password"]
+body #cWindow .uneditable-input,
+body #cWindow select,
+body #cWindow textarea {
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+body #cWindow .cWindowNotification-Jumper a,
+body #cWindow .cWindowNotification-Jumper a:hover,
+body #cWindow .cWindowNotification-Jumper a:focus {
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+/*========================== SEARCH RESULT PAGE =======================*/
+#community-wrap .cSearch-Input {
+	background: rgba(255,255,255,.2);
+	background: url(../images/transparent-bg.png) 0 0 repeat\9;
+	border: 1px solid rgba(255,255,255,.2);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.people-not-found {
+	color: #fff;
+}
+#jsn-page .people-search-form .button {
+	margin-bottom: none;
+}
+.cFriends h2,
+.cSearch-Result b {
+	color: #fff;
+}
+#community-wrap .cSearch-Result,
+#community-wrap .cSearch-Jumper {
+	border-top: 1px solid rgba(255,255,255,.2);
+	color: #fff;
+}
+#community-wrap .cSearch-Jumper a {
+	color: #fff;
+	font-weight: bold;
+}
+body.jsn-color-white .people-not-found,
+body.jsn-color-white .cFriends h2,
+body.jsn-color-white .cSearch-Result b,
+body.jsn-color-white #community-wrap .cSearch-Result,
+body.jsn-color-white #community-wrap .cSearch-Jumper,
+body.jsn-color-white #community-wrap .cSearch-Jumper a {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cSearch-Input {
+	background: #fff;
+}
+/*========================== BODY JSN-COLOR-WHITE =======================*/	
+body.jsn-color-white #community-wrap .cGuest-Intro {
+	background: #fff;
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cGuest-Intro .cGuest-Head,
+body.jsn-color-white #community-wrap .cGuest-Intro .cGuest-Story li {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cSidebar + .cMain,
+body.jsn-color-white #community-wrap .cStreamList a,
+body.jsn-color-white #community-wrap .cStream-Actions span,
+body.jsn-color-white #community-wrap .cStream-Comment .cStream-Meta {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cActivity-Button > a,
+body.jsn-color-white #community-wrap .community-status .creator.stub,
+body.jsn-color-white #community-wrap .community-status .status-creator a,
+body.jsn-color-white #community-wrap .community-status .creator-message.hint {
+	color: #333 !important;
+}
+body.jsn-color-white #community-wrap .cToolBar,
+body.jsn-color-white #community-wrap .community-status .status-creator,
+body.jsn-color-white #community-wrap .cStream-Content {
+	background: #fff;
+	color: #333;
+}
+body.jsn-color-white #community-wrap .community-status .creator.active,
+body.jsn-color-white #community-wrap .community-status .creator-message-container,
+body.jsn-color-white #community-wrap .community-status .creator-view {
+	background: #f8f8f8;
+}
+body.jsn-color-white #community-wrap input[type="text"],
+body.jsn-color-white #community-wrap input[type="password"],
+body.jsn-color-white #community-wrap .uneditable-input,
+body.jsn-color-white #community-wrap select,
+body.jsn-color-white #community-wrap textarea,
+body.jsn-color-white #community-wrap .label-filetype,
+body.jsn-color-white #community-wrap .js_PriContainer {
+	border: 1px solid #ccc;
+	color: #333;
+}
+body.jsn-color-white #community-wrap label,
+body.jsn-color-white #community-wrap .cSubmenu li a,
+body.jsn-color-white #community-wrap .cSubmenu li a:hover,
+body.jsn-color-white #community-wrap .cSubmenu li a.active,
+body.jsn-color-white #community-wrap .small,
+body.jsn-color-white #community-wrap small {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cFilter .filters li.active a,
+body.jsn-color-white #community-wrap .cFilter .filters li a:hover,
+body.jsn-color-white #community-wrap .cFilter .filters li.active a:hover {
+	background: #888;
+}
+body.jsn-color-white #community-wrap .cFilter .filters li a {
+	color: #333;
+}
+body.jsn-color-white #community-wrap #form-login label,
+body.jsn-color-white .cFormList .small a,
+body.jsn-color-white #community-wrap .cFilter .filters li.active a,
+body.jsn-color-white #community-wrap .cFilter .filters li a:hover,
+body.jsn-color-white #community-wrap #form-login input[type="text"],
+body.jsn-color-white #community-wrap #form-login input[type="password"] {
+	color: #fff;
+}
+body.jsn-color-white h1,
+body.jsn-color-white h2,
+body.jsn-color-white h3,
+body.jsn-color-white h4,
+body.jsn-color-white h5,
+body.jsn-color-white h6 {
+	color: #333 !important;
+}
+body.jsn-color-white #community-wrap .cButton.cProfile-LinkEdit,
+body.jsn-color-white #community-wrap .cButton.cProfile-LinkEdit:focus,
+body.jsn-color-white #community-wrap .cButton.creator-share,
+body.jsn-color-white #community-wrap .cButton.creator-share:focus {
+	background: #333;
+}
+body.jsn-color-white #community-wrap .js_dropSelect-0,
+body.jsn-color-white #community-wrap .js_dropSelect-0:hover {
+	background-position: 7px 50% !important;
+}
+body.jsn-color-white #community-wrap .cActivity-Button > a {
+	background: #fff !important;
+}
+body.jsn-color-white #community-wrap .cSubmenu,
+body.jsn-color-white #community-wrap .cToolBox,
+body.jsn-color-white #community-wrap .cPageToolbox,
+body.jsn-color-white #community-wrap .cProfile-Fields {
+	background: #fff;
+
+}
+body.jsn-color-white #community-wrap .cPageToolbox a {
+	color: #333 !important;
+}
+body.jsn-color-white #community-wrap .cProfile-Status {
+	background: #fff;
+	padding: 10px;
+}
+body.jsn-color-white #community-wrap .componentheading,
+body.jsn-color-white #community-wrap [class^="com-icon-"] + a,
+body.jsn-color-white #community-wrap [class*=" com-icon-"] + a,
+body.jsn-color-white #community-wrap [class^="com-icon-"] + span,
+body.jsn-color-white #community-wrap [class*=" com-icon-"] + span {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cPageInfo a,
+body.jsn-color-white #community-wrap .cField-List .cField-Content li a {
+    color: #57BAE8;
+}
+body.jsn-color-white #community-wrap .cPageTabs li.cTabCurrent a {
+    background: #CCC;
+}
+body.jsn-color-white #community-wrap .cAlert {
+	background: #fff;
+}
+body.jsn-color-white .small a,
+body.jsn-color-white #community-wrap .cPageTabs li.cTabDisabled a,
+body.jsn-color-white #community-wrap .cFormList .form-helper,
+body.jsn-color-white #community-wrap .cFormList {
+	 color: #333;
+}
+body.jsn-color-white #cGallery .photoViewport .photoDisplay,
+body.jsn-color-white #community-wrap .cMedia-Option {
+	background: #fff;
+}
+body.jsn-color-white #community-wrap .cWall-Header,
+body.jsn-color-white #community-wrap .cComment-Author,
+body.jsn-color-white .cToolBox-Name,
+body.jsn-color-white #community-wrap .cToolBar + .cToolBox a {
+    color: #333;
+}
+body.jsn-color-white #basicSet .ctitle h2 {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cTabsMenu li a {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cTabsMenu li a:focus,
+body.jsn-color-white #community-wrap .cTabsMenu li a.selected,
+body.jsn-color-white #community-wrap .cTabsMenu li a:hover {
+	background: #ccc;
+	color: #fff;
+}
+body.jsn-color-white #community-wrap .cProfile-Edit .js_dropDownMaster dt span {
+	background: url(../images/pri-arrow-black.png) no-repeat 50% 50%;
+}
+body.jsn-color-white #community-wrap .cMedia-Title a, 
+body.jsn-color-white #community-wrap .cMedia-Title b,
+body.jsn-color-white #community-wrap .cMedia-ThumbList .cMedia-Box, 
+body.jsn-color-white #community-wrap .cMedia-Meta .cMeta-Details {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cButton,
+body.jsn-color-white #community-wrap .cButton:hover,
+body.jsn-color-white #community-wrap .cButton:focus {
+	color: #fff;
+	background: #333;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+body.jsn-color-white #community-wrap .navbar-inner {
+	background: #fff;
+}
+body.jsn-color-white #community-wrap .js-toolbar .nav > .active > a,
+body.jsn-color-white #community-wrap .js-toolbar .nav > .active > a:hover,
+body.jsn-color-white #community-wrap .js-toolbar .nav > .active > a:focus,
+body.jsn-color-white #community-wrap .js-toolbar .nav > li > a:focus,
+body.jsn-color-white #community-wrap .js-toolbar .nav > li > a:hover {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .js-toolbar .nav > li > a,
+body.jsn-color-white #community-wrap .js-toolbar .nav > .active > a,
+body.jsn-color-white #community-wrap .js-toolbar .nav > .active > a:hover,
+body.jsn-color-white #community-wrap .js-toolbar .nav > .active > a:focus,
+body.jsn-color-white #community-wrap .js-toolbar .nav > li > a:focus,
+body.jsn-color-white #community-wrap .js-toolbar .nav > li > a:hover {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cGuest .login-area {
+	background: #fff;
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cGuest .login-area input {
+	color: #333;
+	border: 1px solid #ccc;
+}
+body.jsn-color-white #community-wrap .cGuest .login-area #form-login input[type="text"],
+body.jsn-color-white #community-wrap .cGuest .login-area #form-login input[type="password"],
+body.jsn-color-white #community-wrap .cGuest .login-area #form-login label, 
+body.jsn-color-white #community-wrap .cGuest .login-area a {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cGuest .login-area .add-on {
+	border: 1px solid #ccc;
+	border-right: none;
+}
+body.jsn-color-white #community-wrap .photoCaption .photoCaptionText {
+	background: #fff;
+}
+body.jsn-color-white #community-wrap .cToolBox-Options li a:hover span {
+	color: #999;
+}
+body.jsn-color-white #community-wrap .btn-primary:hover,
+body.jsn-color-white #community-wrap .btn-primary:focus {
+	background: #57BAE8;
+}
+body.jsn-color-white #community-wrap .cMedia-Comments {
+	color: #333;
+}
+body.jsn-color-white #community-wrap .cLike a,
+body.jsn-color-white #community-wrap .cLike b,
+body.jsn-color-white #community-wrap .cLike i {
+	color: #333 !important;
+}
+/*============ SIDE-BAR LAYOUT =============*/
+/************************************************************************************
+smartphone layout (320 - 480): everything is layout in single column
+*************************************************************************************/
+@media only screen and (max-width: 480px), (max-device-width: 480px) {
+	#community-wrap .cToolBox-Options {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#community-wrap .cSidebar {
+		display: none;
+	}
+	#community-wrap .cSidebar + .cMain {
+		margin-right: 0;
+	}
+	#community-wrap .cIndex-Content .cIndex-Name.cResetH {
+	}
+	#community-wrap .cIndex-Content .cIndex-Status {
+		padding-bottom: 5px;
+	}
+	#community-wrap .cIndex-Content .cIndex-Actions {
+		position: inherit;
+	}
+	#community-wrap .cMedia-ThumbList li {
+		width: 50%;
+	}
+	body #cWindow.dialog {
+		max-width: 100% !important;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		left: 0!important; 
+		margin-left: 0!important;
+	}
+	body #cWindow #cWindowContentOuter {
+		max-width: 100%!important;
+	}
+}

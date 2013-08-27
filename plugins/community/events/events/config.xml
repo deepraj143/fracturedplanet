@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community">
+	<params>
+		<param name="count" type="text" default="5" size="3" label="Total Events Displayed" description="The number of entry to display (default 5)" />		
+	</params>
+</extension>

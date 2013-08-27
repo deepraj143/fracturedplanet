@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="user">
+	<name>K2 - Jomsocial User Integration</name>
+	<author>Minitek.gr</author>
+	<creationDate>December 2011</creationDate>
+	<copyright>Minitek.gr. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@minitek.gr</authorEmail>
+	<authorUrl>www.minitek.gr</authorUrl>
+	<version>3.0.1</version>
+	<description>The plugin synchronizes K2 and Jomsocial users.</description>
+	<files>
+		<filename plugin="k2jomsocialuser">k2jomsocialuser.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="k2_usergroup" type="text" default="1" label="K2 user-group ID to automatically subscribe Jomsocial users" description="Insert the ID of K2 user-group" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

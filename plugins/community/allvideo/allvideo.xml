@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>Allvideo</name>
+	<author>JomSocial Team</author>
+	<creationDate>March 2011</creationDate>
+	<copyright>Copyright 2008 - 2010 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<version>2.0.0</version>
+	<isapplication>false</isapplication>
+	<isbrowsable>false</isbrowsable>
+	<description>
+		All Video for JomSocial. This plugin will integrate with All video components.
+	</description>
+	<files>
+		<file plugin="allvideo">allvideo.php</file>
+	</files>
+	
+	<menuitem>
+		<menu label="Inbox" position="toolbar">
+			<link label="Inbox">task=inbox</link>
+			<link label="Compose">task=compose</link>
+		</menu>
+	</menuitem>
+	
+	<params>
+	</params>
+</install>

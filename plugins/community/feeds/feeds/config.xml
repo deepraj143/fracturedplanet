@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="community">
+	<params>
+		<param name="path" type="text" default="" size="45" label="Feed url" description="Url of the rss feed" />
+		<param name="count" type="text" default="10" size="3" label="Count" description="The number of entry to display (default 5)" />		
+	</params>
+</extension>
