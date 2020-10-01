@@ -39,7 +39,7 @@
 	When ready it can be moved to an on-line hosting account of your choice.
 	See the tutorial: http://docs.joomla.org/Tutorial:Joomla_Local_install
 
-9- Updates are free!
+9- Amazing Updates are free!
 	* Always use the latest version: http://www.joomla.org/download.html
 
 10- Where can you get support and help?
